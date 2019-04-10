@@ -6,6 +6,17 @@ body {
     padding: 27px;
     margin: 15px;
     font-size: 25px;
-    width: 7em;
+    width: 5em;
     border-radius: 20%;
+}
+
+button {
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 30%;
+}
+
+button:hover {
+    background-color: grey;
+    color: white;
 }
