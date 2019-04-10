@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+}
+
+#numInput {
+    padding: 27px;
+    margin: 15px;
+    font-size: 25px;
+    width: 7em;
+    border-radius: 20%;
+}
