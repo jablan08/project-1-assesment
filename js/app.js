@@ -6,11 +6,19 @@ const numInput = document.getElementById("numInput")
 
 
 const addNum = () => {
-    displayNum.innerText = `${Number(numInput.value) + Number(displayNum.innerText)}`
+    let num = Number(numInput.value)+ Number(displayNum.innerText);
+    displayNum.innerText = num;
+    if (Math.sign(num)===1 || Math.sign(num)===0){
+        displayNum.style.color = "black"
+    }
 }
 
 const minusNum = () => {
-    displayNum.innerText = `${Number(displayNum.innerText)-Number(numInput.value)}`
+    let num = Number(displayNum.innerText)-Number(numInput.value)
+    displayNum.innerText = num;
+    if (Math.sign(num)===-1){
+        displayNum.style.color = "red"
+    }
 }
 
 plus.addEventListener("click",()=>{
